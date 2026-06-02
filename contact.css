@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+     background-color: rgb(248, 248, 248);
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+#name {
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 100;
+}
+
+nav {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 100;
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+    transition: color 0.2s ease;
+    color: gray;
+}
+
+nav a:hover{
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #888;
+    font-size: 20px;
+}
+
+.footer-name {
+    margin-bottom: 0.5rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-icons a {
+    color: #888;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #333;
+}
+
+.contact-container {
+    flex: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    width: 100%;
+}
+
+
+.contact-container h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.contact-container h3:last-of-type {
+    margin-bottom: 3.5rem;
+    color: #888;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+
+.social-icon-link {
+    font-size: 36px; 
+    color: #aaa; 
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+    display: inline-block;
+}
+
+
+.social-icon-link:hover {
+    transform: translateY(-4px); 
+}
+
+
+.social-icon-link.email:hover {
+    color: #ea4335; 
+}
+
+.social-icon-link.github:hover {
+    color: #24292e; 
+}
+
+.social-icon-link.linkedin:hover {
+    color: #0077b5; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 40px 30px;
+    }
+
+    nav {
+        margin-left: 0;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    main, .contact-container {
+        padding: 20px 30px;
+    }
+
+    
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
